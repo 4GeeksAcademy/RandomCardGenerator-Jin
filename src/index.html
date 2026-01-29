@@ -5,7 +5,7 @@
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
@@ -13,23 +13,22 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Miss+Fajardose&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+<body>
+  <div class="myRectangle">
+    <div class="suitIcon topSuit">♠</div>
+    <div class="number" id="numberValue">A</div>
+    <div class="suitIcon bottomSuit">♠</div>
+  </div>
+
+  <button id="drawButton" class="btn btn-warning mt-4">Draw New Card</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>

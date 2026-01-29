@@ -1,5 +1,83 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    background-image: url("/assets/img/1000_F_122068289_caFzxjaUL9wzG3PuoFxdHjBmChpNTMwv.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.myRectangle {
+    width: 350px; 
+    height: 500px;
+    background-image: url("/assets/img/1000_F_314090534_VfHNqaNnbHnNl0dH8of0dEPurcfhsAOD.jpg");
+    background-size: 130%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 40px !important;
+    box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.suitIcon {
+    position: absolute;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.topSuit {
+    top: 30px;
+    left: 30px;
+}
+
+.bottomSuit {
+    bottom: 30px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 12rem;
+    font-family: "Miss Fajardose", cursive;
+    font-weight: 300;
+    width: 100%;
+    text-align: center; 
+}
+
+/* The Shuffling Animation (I looked this one up as well as the dropshadows) */
+@keyframes shuffle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* A class to trigger the shuffling animation */
+.shuffling {
+  animation: shuffle 0.4s; /* Shakes for 0.4 seconds */
+  animation-iteration-count: 1;
 }
